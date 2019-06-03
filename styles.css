@@ -1,2 +1,32 @@
 /* color overlay over background image */
+
 box-shadow: inset 0 0 0 3000px rgba(172,56,57,0.45);
+
+/* --------------------------------------------------------------- */
+
+
+/* Verical align */
+
+/* trick no.1 */
+.vertical-align { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+
+} 
+
+/* From <https://joshhall.co/how-to-vertically-align-content-in-divi/> */
+
+/* trick no.2 */
+.center { 
+  position: relative;
+}
+
+.center p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --------------------------------------------------------------- */
